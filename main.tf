@@ -77,12 +77,12 @@ resource "aws_db_instance" "my_rds" {
   storage_type         = "gp2"
   engine               = "mysql"
   engine_version       = "5.7"
-  instance_class       = "db.t2.micro" # Change to your desired instance type
+  instance_class       = "db.t2.micro"
   name                 = "mydb"
   username             = "admin"
-  password             = "admin123"    # Replace with your own password
+  password             = "admin123" 
   subnet_group_name    = "mydb-subnet-group"
-  vpc_security_group_ids = ["sg-12345678"] # Change to your security group ID
+  vpc_security_group_ids = ["sg-08e3042bf3001f5c9"] 
 
   tags = {
     Name = "my-rds"
