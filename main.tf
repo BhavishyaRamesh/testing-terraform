@@ -81,7 +81,7 @@ resource "aws_db_instance" "my_rds" {
   name                 = "mydb"
   username             = "admin"
   password             = "admin123" 
-  subnet_group_name    = "mydb-subnet-group"
+  subnet_ids           = "var.subnet_ids"
   vpc_security_group_ids = ["sg-08e3042bf3001f5c9"] 
 
   tags = {
